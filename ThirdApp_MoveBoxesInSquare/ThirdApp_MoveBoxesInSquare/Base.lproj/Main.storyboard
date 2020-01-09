@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThirdApp_MoveBoxesInSquare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Wc-2M-7Xr">
+                                <rect key="frame" x="0.0" y="44" width="50" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCc-pL-KY0">
+                                        <rect key="frame" x="8" y="15" width="34" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="BlR-eK-8u6"/>
+                                            <constraint firstAttribute="width" constant="34" id="ddB-Lh-hcd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MCc-pL-KY0" firstAttribute="top" secondItem="3Wc-2M-7Xr" secondAttribute="top" constant="15" id="4hE-oD-Nph"/>
+                                    <constraint firstAttribute="trailing" secondItem="MCc-pL-KY0" secondAttribute="trailing" constant="8" id="Rfw-GK-qaP"/>
+                                    <constraint firstAttribute="width" constant="50" id="TZh-2a-YWu"/>
+                                    <constraint firstAttribute="bottom" secondItem="MCc-pL-KY0" secondAttribute="bottom" constant="14" id="hXl-E7-rbX"/>
+                                    <constraint firstAttribute="height" constant="50" id="hfW-t3-lAE"/>
+                                    <constraint firstItem="MCc-pL-KY0" firstAttribute="leading" secondItem="3Wc-2M-7Xr" secondAttribute="leading" constant="8" id="vFI-k3-jrt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3Wc-2M-7Xr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Sm-rC-mSV"/>
+                            <constraint firstItem="3Wc-2M-7Xr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XUg-qZ-vAu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewBox" destination="3Wc-2M-7Xr" id="WqL-Ts-Oxp"/>
+                        <outlet property="viewLbl" destination="MCc-pL-KY0" id="bqV-5g-eUB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
