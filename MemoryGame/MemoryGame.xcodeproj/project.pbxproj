@@ -14,6 +14,7 @@
 		45450D6323CA26C100C16836 /* MemoryGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45450D6123CA26C100C16836 /* MemoryGame.xcdatamodeld */; };
 		45450D6523CA26C300C16836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45450D6423CA26C300C16836 /* Assets.xcassets */; };
 		45450D6823CA26C300C16836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45450D6623CA26C300C16836 /* LaunchScreen.storyboard */; };
+		45484EFB23CACDB500D84114 /* FinalScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45484EFA23CACDB500D84114 /* FinalScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		45450D6423CA26C300C16836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45450D6723CA26C300C16836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45450D6923CA26C300C16836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45484EFA23CACDB500D84114 /* FinalScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				45450D5823CA26C100C16836 /* AppDelegate.swift */,
 				45450D5A23CA26C100C16836 /* SceneDelegate.swift */,
 				45450D5C23CA26C100C16836 /* ViewController.swift */,
+				45484EFA23CACDB500D84114 /* FinalScoreViewController.swift */,
 				45450D5E23CA26C100C16836 /* Main.storyboard */,
 				45450D6423CA26C300C16836 /* Assets.xcassets */,
 				45450D6623CA26C300C16836 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				45450D5D23CA26C100C16836 /* ViewController.swift in Sources */,
 				45450D5923CA26C100C16836 /* AppDelegate.swift in Sources */,
+				45484EFB23CACDB500D84114 /* FinalScoreViewController.swift in Sources */,
 				45450D6323CA26C100C16836 /* MemoryGame.xcdatamodeld in Sources */,
 				45450D5B23CA26C100C16836 /* SceneDelegate.swift in Sources */,
 			);

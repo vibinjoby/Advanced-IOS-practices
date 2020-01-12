@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    @IBOutlet weak var nextPageBtn: UIButton!
     var btnIndexArr = [Int]()
     var totalTime = 0.0
     var firstClickNum :UIImage?
@@ -77,6 +77,7 @@ class ViewController: UIViewController {
                 }
             }
             if score == 8 {
+                nextPageBtn.isEnabled = true
                 completedLbl.text = "Congrats..You Completed this Game"
                 completedTimeLbl.text = "Game completed in \(String(describing: Double(round(1000*totalTime)/1000)))"
                 stopTimer()
@@ -103,6 +104,7 @@ class ViewController: UIViewController {
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { timer in
             self.totalTime += 0.1
+            self.completedTimeLbl.text = "Time: \(Double(round(1000 * self.totalTime)/1000))"
         })
     }
     
@@ -121,16 +123,16 @@ class ViewController: UIViewController {
         }
     }
     
-    func saveData() {
-        UserDefaults.standard.mutableArrayValue(forKey: "GameTime").add(Double(round(1000*totalTime)/1000))
-        loadData()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "topScorers" {
+            if let viewController = segue.destination as? FinalScoreViewController {
+                viewController.totalTime = self.totalTime
+            }
+        }
     }
     
-    func loadData() {
-        let timeArr = UserDefaults.standard.mutableArrayValue(forKey: "GameTime")
-        print(timeArr)
+    func saveData() {
+        UserDefaults.standard.mutableArrayValue(forKey: "GameTime").add(Double(round(1000*totalTime)/1000))
     }
-
-
 }
 
